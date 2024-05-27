@@ -1,0 +1,11 @@
+[{
+  "_id": {
+    "$oid": "6654788d2f6558042e8bcd16"
+  },
+  "name": "John Doe",
+  "adresse": "Musterstraße 123, 12345 Musterstadt",
+  "größe": 180.5,
+  "geburtsdatum": {
+    "$date": "1990-01-01T00:00:00.000Z"
+  }
+}]
