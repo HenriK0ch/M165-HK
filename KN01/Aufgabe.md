@@ -34,4 +34,4 @@ Es könnte Probleme geben wenn man das Datum als String an gibt.
 ![HTML Seite](CmdShellCommands.png)
 
 Sie zeigen was es für Dtaenbanken, Collections und Tables gibt.
-Eine Collection ist eine Ansammlung von Dokumenten und Tables sind mit rows und spalten.
+Show collections und Show tables zeigt genau das gleiche hier bei ist Tables einfach ein alias für Collections. Das ist so um es Nutzern die von einer SQL Datenbank kommen einfacher zu machen es zu verstehen.
