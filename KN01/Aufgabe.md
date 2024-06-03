@@ -34,3 +34,4 @@ Es könnte Probleme geben wenn man das Datum als String an gibt.
 ![HTML Seite](CmdShellCommands.png)
 
 Sie zeigen was es für Dtaenbanken, Collections und Tables gibt.
+Eine Collection ist eine Ansammlung von Dokumenten und Tables sind mit rows und spalten.
