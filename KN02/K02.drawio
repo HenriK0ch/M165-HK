@@ -1,0 +1,154 @@
+<mxfile host="app.diagrams.net" modified="2024-06-17T12:10:41.043Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="vXD3TkG_ZgPDVv4i4aG3" version="24.5.4" type="device">
+  <diagram name="Seite-1" id="obTr7iO_e28MiiPK8_s7">
+    <mxGraphModel dx="827" dy="373" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Xk7zAYUzbVxYIFMeELdb-1" value="Player" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xk7zAYUzbVxYIFMeELdb-3" value="Tennisplatz" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xk7zAYUzbVxYIFMeELdb-4" value="Alterksategorie" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xk7zAYUzbVxYIFMeELdb-7" value="" style="endArrow=none;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="1" source="Xk7zAYUzbVxYIFMeELdb-4" target="Xk7zAYUzbVxYIFMeELdb-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="210" as="sourcePoint" />
+            <mxPoint x="250" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xk7zAYUzbVxYIFMeELdb-8" value="M:1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Xk7zAYUzbVxYIFMeELdb-7" vertex="1" connectable="0">
+          <mxGeometry x="0.0563" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xk7zAYUzbVxYIFMeELdb-15" value="Club" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="410" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xk7zAYUzbVxYIFMeELdb-16" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Xk7zAYUzbVxYIFMeELdb-15" target="Xk7zAYUzbVxYIFMeELdb-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="210" as="sourcePoint" />
+            <mxPoint x="490" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xk7zAYUzbVxYIFMeELdb-17" value="M:1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Xk7zAYUzbVxYIFMeELdb-16" vertex="1" connectable="0">
+          <mxGeometry x="0.1732" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xk7zAYUzbVxYIFMeELdb-18" value="" style="endArrow=none;html=1;rounded=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" parent="1" source="Xk7zAYUzbVxYIFMeELdb-3" target="Xk7zAYUzbVxYIFMeELdb-15" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="280" as="sourcePoint" />
+            <mxPoint x="380" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tpss3IP3rHbB0lRGQL11-9" value="1:M" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Xk7zAYUzbVxYIFMeELdb-18" vertex="1" connectable="0">
+          <mxGeometry x="0.0787" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tpss3IP3rHbB0lRGQL11-5" value="Reservation" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="290" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tpss3IP3rHbB0lRGQL11-19" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="Xk7zAYUzbVxYIFMeELdb-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="240" as="sourcePoint" />
+            <mxPoint x="460" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tpss3IP3rHbB0lRGQL11-20" value="1:1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Tpss3IP3rHbB0lRGQL11-19" vertex="1" connectable="0">
+          <mxGeometry x="-0.0584" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tpss3IP3rHbB0lRGQL11-21" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="Tpss3IP3rHbB0lRGQL11-5" target="Xk7zAYUzbVxYIFMeELdb-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="200" as="sourcePoint" />
+            <mxPoint x="460" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tpss3IP3rHbB0lRGQL11-22" value="1:M" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Tpss3IP3rHbB0lRGQL11-21" vertex="1" connectable="0">
+          <mxGeometry x="0.0216" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tpss3IP3rHbB0lRGQL11-23" value="Player" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="110" y="370" width="220" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Tpss3IP3rHbB0lRGQL11-26" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Name: String&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- Alter: Int&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- Rank: String&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- Alterskategorie: alterskategorie&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- Reservation: Array&amp;lt;Reservation&amp;gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="Tpss3IP3rHbB0lRGQL11-23" vertex="1">
+          <mxGeometry x="10" y="15" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Tpss3IP3rHbB0lRGQL11-27" value="Alterskategorie" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="370" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Tpss3IP3rHbB0lRGQL11-29" value="- Name: String&lt;div&gt;- Player: Array&amp;lt;Player&amp;gt;&lt;/div&gt;&lt;div&gt;- Mindest alter: Int&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Tpss3IP3rHbB0lRGQL11-27" vertex="1">
+          <mxGeometry x="10" y="40" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tpss3IP3rHbB0lRGQL11-31" value="" style="endArrow=none;html=1;rounded=0;" parent="1" source="Tpss3IP3rHbB0lRGQL11-26" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="540" as="sourcePoint" />
+            <mxPoint x="350" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tpss3IP3rHbB0lRGQL11-32" value="Reservation" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="110" y="520" width="200" height="110" as="geometry">
+            <mxRectangle x="580" y="370" width="100" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tpss3IP3rHbB0lRGQL11-33" value="- Id: Int&lt;div&gt;- Player: Player&lt;/div&gt;&lt;div&gt;- Tennisplatz: Tennisplatz&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Tpss3IP3rHbB0lRGQL11-32" vertex="1">
+          <mxGeometry x="10" y="40" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tpss3IP3rHbB0lRGQL11-34" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="Tpss3IP3rHbB0lRGQL11-32" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="440" as="sourcePoint" />
+            <mxPoint x="210" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tpss3IP3rHbB0lRGQL11-35" value="Club" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="520" width="340" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Tpss3IP3rHbB0lRGQL11-37" value="- Players: Array&amp;lt;Player&amp;gt;&lt;div&gt;- Name: String&lt;br&gt;&lt;div&gt;-Tennisplätze: Array&amp;nbsp;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Tpss3IP3rHbB0lRGQL11-35" vertex="1">
+          <mxGeometry x="10" y="30" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tpss3IP3rHbB0lRGQL11-39" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="Tpss3IP3rHbB0lRGQL11-35" vertex="1">
+          <mxGeometry x="10" y="80" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tpss3IP3rHbB0lRGQL11-40" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Tennisplatz&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Tpss3IP3rHbB0lRGQL11-35" vertex="1">
+          <mxGeometry x="30" y="85" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tpss3IP3rHbB0lRGQL11-41" value="- Id: Int&lt;div&gt;- Reservation: Reservation&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Tpss3IP3rHbB0lRGQL11-35" vertex="1">
+          <mxGeometry x="10" y="110" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tpss3IP3rHbB0lRGQL11-38" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" parent="1" source="Tpss3IP3rHbB0lRGQL11-35" target="Tpss3IP3rHbB0lRGQL11-23" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="590" as="sourcePoint" />
+            <mxPoint x="390" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tpss3IP3rHbB0lRGQL11-42" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" parent="1" source="Tpss3IP3rHbB0lRGQL11-32" target="Tpss3IP3rHbB0lRGQL11-39" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="580" as="sourcePoint" />
+            <mxPoint x="390" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TxRr0AhZjUg-TEM5061E-1" value="Spieler im Tennisklub" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="50" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TxRr0AhZjUg-TEM5061E-2" value="Ein Tennisklub" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="30" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TxRr0AhZjUg-TEM5061E-3" value="Tennisplatz" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="190" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TxRr0AhZjUg-TEM5061E-4" value="Eine Reservation von einem Tennisplatz" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="290" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TxRr0AhZjUg-TEM5061E-5" value="Die Alterskategorie in der man Tennis spielt" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="290" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
