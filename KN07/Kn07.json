@@ -1,0 +1,172 @@
+{
+  "style": {
+    "font-family": "sans-serif",
+    "background-color": "#ffffff",
+    "background-image": "",
+    "background-size": "100%",
+    "node-color": "#ffffff",
+    "border-width": 4,
+    "border-color": "#000000",
+    "radius": 50,
+    "node-padding": 5,
+    "node-margin": 2,
+    "outside-position": "auto",
+    "node-icon-image": "",
+    "node-background-image": "",
+    "icon-position": "inside",
+    "icon-size": 64,
+    "caption-position": "inside",
+    "caption-max-width": 200,
+    "caption-color": "#000000",
+    "caption-font-size": 50,
+    "caption-font-weight": "normal",
+    "label-position": "inside",
+    "label-display": "pill",
+    "label-color": "#000000",
+    "label-background-color": "#ffffff",
+    "label-border-color": "#000000",
+    "label-border-width": 4,
+    "label-font-size": 40,
+    "label-padding": 5,
+    "label-margin": 4,
+    "directionality": "directed",
+    "detail-position": "inline",
+    "detail-orientation": "parallel",
+    "arrow-width": 5,
+    "arrow-color": "#000000",
+    "margin-start": 5,
+    "margin-end": 5,
+    "margin-peer": 20,
+    "attachment-start": "normal",
+    "attachment-end": "normal",
+    "relationship-icon-image": "",
+    "type-color": "#000000",
+    "type-background-color": "#ffffff",
+    "type-border-color": "#000000",
+    "type-border-width": 0,
+    "type-font-size": 16,
+    "type-padding": 5,
+    "property-position": "outside",
+    "property-alignment": "colon",
+    "property-color": "#000000",
+    "property-font-size": 16,
+    "property-font-weight": "normal"
+  },
+  "nodes": [
+    {
+      "id": "n1",
+      "position": {
+        "x": 270.7064164917311,
+        "y": -127.76749737199117
+      },
+      "caption": "Club",
+      "style": {},
+      "labels": [],
+      "properties": {
+        "ClubId": "Int"
+      }
+    },
+    {
+      "id": "n5",
+      "position": {
+        "x": 4.44811684913023,
+        "y": -127.76749737199117
+      },
+      "caption": "Player",
+      "style": {},
+      "labels": [],
+      "properties": {
+        "Name": "String",
+        "Alter": "Int",
+        "Rank": "String",
+        "AlterkategorieId": "Int",
+        "ClubId": "Int"
+      }
+    },
+    {
+      "id": "n6",
+      "position": {
+        "x": -216.03704246049836,
+        "y": 21.496619725108644
+      },
+      "caption": "Alterskategorie",
+      "style": {},
+      "labels": [],
+      "properties": {
+        "AlterkategorieId": "Int",
+        "PlayerIds": "Array<int>"
+      }
+    },
+    {
+      "id": "n7",
+      "position": {
+        "x": -75.55188315086977,
+        "y": 162.81895408695024
+      },
+      "caption": "Reservation",
+      "style": {},
+      "labels": [],
+      "properties": {
+        "PlayerId": "Int",
+        "TennisplatzId": "Int"
+      }
+    },
+    {
+      "id": "n8",
+      "position": {
+        "x": 270.1643552656068,
+        "y": 162.81895408695024
+      },
+      "caption": "Tennisplatz",
+      "style": {},
+      "labels": [],
+      "properties": {
+        "TennisplatzId": "Int"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "n1",
+      "type": "is in Club",
+      "style": {},
+      "properties": {},
+      "fromId": "n5",
+      "toId": "n1"
+    },
+    {
+      "id": "n2",
+      "type": "Is In",
+      "style": {},
+      "properties": {},
+      "fromId": "n5",
+      "toId": "n6"
+    },
+    {
+      "id": "n3",
+      "type": "Can make",
+      "style": {},
+      "properties": {},
+      "fromId": "n5",
+      "toId": "n7"
+    },
+    {
+      "id": "n4",
+      "type": "reservate",
+      "style": {},
+      "properties": {
+        "Date()": "ReservationDate"
+      },
+      "fromId": "n7",
+      "toId": "n8"
+    },
+    {
+      "id": "n5",
+      "type": "Belongs to",
+      "style": {},
+      "properties": {},
+      "fromId": "n8",
+      "toId": "n1"
+    }
+  ]
+}
