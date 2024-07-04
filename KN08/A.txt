@@ -1,0 +1,65 @@
+CREATE 
+// Clubs
+(club1:Club {ClubId: 1}),
+(club2:Club {ClubId: 2}),
+(club3:Club {ClubId: 3}),
+(club4:Club {ClubId: 4}),
+(club5:Club {ClubId: 5}),
+
+// Players
+(player1:Player {Name: "Alice", Alter: 25, Rank: "A", AlterskategorieId: 1, ClubId: 1}),
+(player2:Player {Name: "Bob", Alter: 30, Rank: "B", AlterskategorieId: 1, ClubId: 2}),
+(player3:Player {Name: "Charlie", Alter: 35, Rank: "C", AlterskategorieId: 2, ClubId: 3}),
+(player4:Player {Name: "David", Alter: 28, Rank: "B", AlterskategorieId: 2, ClubId: 4}),
+(player5:Player {Name: "Eve", Alter: 22, Rank: "A", AlterskategorieId: 3, ClubId: 5}),
+
+// Alterskategorien
+(alterskategorie1:Alterskategorie {AlterskategorieId: 1, PlayerIds: [1, 2]}),
+(alterskategorie2:Alterskategorie {AlterskategorieId: 2, PlayerIds: [3, 4]}),
+(alterskategorie3:Alterskategorie {AlterskategorieId: 3, PlayerIds: [5]}),
+
+// Tennisplätze
+(tennisplatz1:Tennisplatz {TennisplatzId: 1, ClubId: 1}),
+(tennisplatz2:Tennisplatz {TennisplatzId: 2, ClubId: 2}),
+(tennisplatz3:Tennisplatz {TennisplatzId: 3, ClubId: 3}),
+(tennisplatz4:Tennisplatz {TennisplatzId: 4, ClubId: 4}),
+(tennisplatz5:Tennisplatz {TennisplatzId: 5, ClubId: 5}),
+
+// Reservations
+(reservation1:Reservation {PlayerId: 1, TennisplatzId: 1, ReservationDate: date("2024-07-01")}),
+(reservation2:Reservation {PlayerId: 2, TennisplatzId: 2, ReservationDate: date("2024-07-02")}),
+(reservation3:Reservation {PlayerId: 3, TennisplatzId: 3, ReservationDate: date("2024-07-03")}),
+(reservation4:Reservation {PlayerId: 4, TennisplatzId: 4, ReservationDate: date("2024-07-04")}),
+(reservation5:Reservation {PlayerId: 5, TennisplatzId: 5, ReservationDate: date("2024-07-05")}),
+
+// Relationships
+(player1)-[:IS_IN]->(alterskategorie1),
+(player2)-[:IS_IN]->(alterskategorie1),
+(player3)-[:IS_IN]->(alterskategorie2),
+(player4)-[:IS_IN]->(alterskategorie2),
+(player5)-[:IS_IN]->(alterskategorie3),
+
+(player1)-[:IS_IN_CLUB]->(club1),
+(player2)-[:IS_IN_CLUB]->(club2),
+(player3)-[:IS_IN_CLUB]->(club3),
+(player4)-[:IS_IN_CLUB]->(club4),
+(player5)-[:IS_IN_CLUB]->(club5),
+
+(player1)-[:CAN_MAKE]->(reservation1),
+(player2)-[:CAN_MAKE]->(reservation2),
+(player3)-[:CAN_MAKE]->(reservation3),
+(player4)-[:CAN_MAKE]->(reservation4),
+(player5)-[:CAN_MAKE]->(reservation5),
+
+(reservation1)-[:RESERVATE]->(tennisplatz1),
+(reservation2)-[:RESERVATE]->(tennisplatz2),
+(reservation3)-[:RESERVATE]->(tennisplatz3),
+(reservation4)-[:RESERVATE]->(tennisplatz4),
+(reservation5)-[:RESERVATE]->(tennisplatz5),
+
+(tennisplatz1)-[:BELONGS_TO]->(club1),
+(tennisplatz2)-[:BELONGS_TO]->(club2),
+(tennisplatz3)-[:BELONGS_TO]->(club3),
+(tennisplatz4)-[:BELONGS_TO]->(club4),
+(tennisplatz5)-[:BELONGS_TO]->(club5)
+;
