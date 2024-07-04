@@ -1,6 +1,51 @@
 # A
+![ConnectionFailed](ConnectionFailed.png)
+
+```
+use TennisCLubDB
+
+db.createUser({
+    user: 'Koch',
+    pwd: '1234',
+    roles: [
+        {role: "read", db: "TennisClubDB"}
+    ]
+})
+db.createUser({
+    user: 'Henri',
+    pwd: '1234',
+    roles: [
+        {role: 'readWrite', db: 'TennisClubDB'}
+    ]
+})
+
+```
+![ConnectionFailed](SnapshotErstellt.png)
+![ConnectionFailed](BeforeDelete.png)
+![ConnectionFailed](DroppedCollection.png)
+![ConnectionFailed](BothVolumes.png)
+![ConnectionFailed](Restored.png)
 
 # B
+
+### 1
+
+![ConnectionFailed](KochLoggedIn.png)
+![ConnectionFailed](KochNotAuthorized.png)
+![ConnectionFailed](HenriLoggedIn.png)
+![ConnectionFailed](HenriCreate.png)
+
+
+Ich habe das alte volumen getrennt und aus dem snapshot ein Volumen gemacht und dann angeheangt.
+
+### 2
+
+![ConnectionFailed](Before.png)
+![ConnectionFailed](DumpShell.png)
+![ConnectionFailed](Deleted.png)
+![ConnectionFailed](Restore.png)
+![ConnectionFailed](After.png)
+
 
 # C
 ### Replication
