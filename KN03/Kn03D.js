@@ -19,11 +19,9 @@ const player1Id = ObjectId();
 const player2Id = ObjectId();
 const player3Id = ObjectId();
 
-db.Player.insertMany([
-  { _id: player1Id, Name: "Alice", Alter: 15, Rank: "A", Alterskategorie: alterskategorie1Id, ClubId: ObjectId() },
-  { _id: player2Id, Name: "Bob", Alter: 20, Rank: "B", Alterskategorie: alterskategorie2Id, ClubId: ObjectId() },
-  { _id: player3Id, Name: "Charlie", Alter: 40, Rank: "C", Alterskategorie: alterskategorie3Id, ClubId: ObjectId() }
-]);
+db.Player.insertOne({ _id: player1Id, Name: "Alice", Alter: 15, Rank: "A", Alterskategorie: alterskategorie1Id, ClubId: ObjectId() });
+db.Player.insertOne({ _id: player2Id, Name: "Bob", Alter: 20, Rank: "B", Alterskategorie: alterskategorie2Id, ClubId: ObjectId() });
+db.Player.insertOne({ _id: player3Id, Name: "Charlie", Alter: 40, Rank: "C", Alterskategorie: alterskategorie3Id, ClubId: ObjectId() });
 
 const club1Id = ObjectId();
 const club2Id = ObjectId();
@@ -43,7 +41,6 @@ db.Reservation.insertMany([
 
 print("Daten wurden erfolgreich hinzugefügt.");
 
-
 db.Player.updateOne(
   { _id: player1Id },
   { $set: { Rank: "B" } }
@@ -56,7 +53,7 @@ db.Club.updateMany(
 
 db.Alterskategorie.replaceOne(
   { _id: alterskategorie1Id },
-  { Name: "Junior Player", Mindest_alter: 12 }
+  { _id: alterskategorie1Id, Name: "Junior Player", Mindest_alter: 12 }
 );
 
 print("Daten wurden erfolgreich verändert.");
