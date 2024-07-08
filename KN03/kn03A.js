@@ -25,8 +25,8 @@ db.Player.insertMany([
 ]);
 
 db.Club.insertMany([
-  { _id: club1Id, Name: "City Club", Players: [player1Id, player2Id] },
-  { _id: club2Id, Name: "Country Club", Players: [player3Id] }
+  { _id: club1Id, Name: "City Club"},
+  { _id: club2Id, Name: "Country Club"}
 ]);
 
 const reservation1Id = new ObjectId();
